@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>GoalZone | Canchas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/canchas.css">
+</head>
+<body>
+
+<div class="topbar">
+    <div class="title-business">
+        <i class="fa-solid fa-futbol"></i> GoalZone Deportivo
+    </div>
+    <div class="btn-menu">
+        <button class="hamburger" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</div>
+
+<div class="overlay"></div>
+
+<aside class="sidebar">
+    <div class="sidebar-logo">
+        <i class="fa-solid fa-futbol"></i> GoalZone
+    </div>
+    <ul>
+       <li>
+            <a href="index.html" class="activo" data-page="inicio">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+            </a>
+        </li>
+        <li>
+            <a href="canchas.html" data-page="canchas">
+                <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+                <span>Canchas</span>
+            </a>
+        </li>
+        <li>
+            <a href="clientes.html" data-page="clientes">
+                <i class="fa-solid fa-users"></i>
+                <span>Clientes</span>
+            </a>
+        </li>
+        <li>
+            <a href="reserva.html" data-page="reservas">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Reservas</span>
+            </a>
+        </li>
+    </ul>
+</aside>
+
+<main class="main-content">
+    <div class="container mt-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+            <h1>
+                <i class="fa-solid fa-table-tennis-paddle-ball text-success me-2"></i>Gestión de Canchas
+            </h1>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalCancha">
+                <i class="fa-solid fa-plus"></i> Nueva Cancha
+            </button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-success">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio por hora</th>
+                        <th>Estado</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCanchas">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/cancha.js"></script>
+</body>
+</html>
